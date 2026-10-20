@@ -28,6 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
         musicToggle.classList.remove('playing');
     }
 
+    // Sync UI with audio events
+    music.addEventListener('play', () => {
+        isPlayingMusic = true;
+        musicToggle.classList.add('playing');
+    });
+
+    music.addEventListener('pause', () => {
+        isPlayingMusic = false;
+        musicToggle.classList.remove('playing');
+    });
+
+    music.addEventListener('ended', () => {
+        isPlayingMusic = false;
+        musicToggle.classList.remove('playing');
+    });
+
     musicToggle.addEventListener('click', (e) => {
         e.stopPropagation();
         if (music.paused) {
