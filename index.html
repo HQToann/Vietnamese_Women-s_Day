@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10 🌸</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <!-- Floating background ambient glow -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Music player widget -->
+    <div class="music-widget" id="music-toggle" title="Bật / Tắt nhạc">
+        <div class="music-disc" id="music-disc">
+            <span class="disc-icon">🎵</span>
+        </div>
+        <div class="music-info">
+            <span class="music-title">Thế Giới Của Anh (Điệp khúc) 💖</span>
+            <div class="music-wave" id="music-wave">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="background" id="main-scene">
+        <!-- Terminal / Message Card Window -->
+        <div class="window" id="log-window">
+            <div class="title-bar">
+                <div class="dots">
+                    <span class="dot pink"></span>
+                    <span class="dot peach"></span>
+                    <span class="dot rose"></span>
+                </div>
+                <div class="title-text">🌸 VIETNAMESE_WOMEN_DAY_20_10.log</div>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-label">ONLINE</span>
+                </div>
+            </div>
+            <div class="content" id="log-container">
+                <div class="log-item initial">
+                    <div class="timestamp">[20.10] :: SYSTEM_INITIALIZE</div>
+                    <div>
+                        <span class="tag tag-ready">[READY]</span> 
+                        Hệ thống đã sẵn sàng khởi tạo những điều ngọt ngào nhất... Nhấn nút bên dưới để bắt đầu! ✨
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Button -->
+        <button id="run-btn" class="action-btn">
+            <span class="btn-icon">💖</span>
+            <span class="btn-text">KÍCH HOẠT LỜI CHÚC 20/10</span>
+        </button>
+
+        <!-- Final celebratory greeting card -->
+        <div class="wish-card" id="wish-card">
+            <div class="wish-ribbon">🌸 20.10.2026 🌸</div>
+            <h1 class="wish-title">Chúc Mừng Ngày Phụ Nữ Việt Nam</h1>
+            <p class="wish-quote">
+                "Cảm ơn vì đã luôn dịu dàng, kiên cường và mang lại những điều tuyệt vời nhất cho thế giới này."
+            </p>
+            <div class="wish-body">
+                Chúc bạn mỗi ngày trôi qua đều ngập tràn niềm vui, nụ cười luôn rạng rỡ như đóa hoa hướng dương, và luôn được trân trọng, yêu thương bằng tất cả sự chân thành nhất! 💐✨
+            </div>
+            <div class="wish-footer">
+                <button id="replay-btn" class="replay-btn">
+                    <span>↺</span> Xem lại thông điệp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bg-music" src="THE_GIOI_CUA_ANH_CHORUS.mp3" preload="auto" loop></audio>
+
+    <script src="./script.js"></script>
+</body>
+</html>
